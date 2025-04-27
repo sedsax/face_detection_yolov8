@@ -1,0 +1,5 @@
+train: C:/Users/Seda/Desktop/yolo_hazirlik/datasets/face/images/train
+val: C:/Users/Seda/Desktop/yolo_hazirlik/datasets/face/images/val/
+nc: 1
+names:
+  0: face
