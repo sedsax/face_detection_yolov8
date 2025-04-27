@@ -12,14 +12,17 @@ datasets/
         └── val/
 
 --------------------------------
-Klasörlemeden sonra proje dizininde terminale sırasıyla yazılacak komutlar
+Temiz bir proje ortamı oluşturmak için terminalden:
+- python -m venv yolo_env
 
-- pip install ultralytics
-
+Sonra ortamı aktif et:
 - yolo_env\Scripts\activate
 
-- yolo detect train data="C:/Users/Seda/Desktop/yolo_hazirlik/data.yaml" model=yolov8n.pt epochs=20 imgsz=640
+Ultralytics'in resmi YOLOv8 paketini yükle:
+- pip install ultralytics
 
+Klasörleme işleminden sonra proje dizininde eğitim(train) işlemi için
+- yolo detect train data="C:/Users/Seda/Desktop/yolo_hazirlik/data.yaml" model=yolov8n.pt epochs=20 imgsz=640
 ----------------------------------------------------------------------------------------------------------------
 
 20 epoch tamamlanınca eğitim bitecek ve çıktılar runs/detect/train2/ klasörüne kaydolacak.
@@ -30,5 +33,4 @@ results.png → Loss ve accuracy grafiklerin
 
 ----------------------------------------------------------------------------------------------------------------
 istenilen bir fotoğrafı test etmek için gerekli komut
-
 - yolo task=detect mode=predict model=runs/detect/train2/weights/best.pt source="C:/Users/Seda/Desktop/yolo_hazirlik/datasets/face/images/val/Movie-on-2-18-25-at-8_25-PM_mov-0001_jpg.rf.d811931b759599f226517822348e3cc4.jpg"
