@@ -14,9 +14,9 @@ datasets/
 --------------------------------
 Klasörlemeden sonra proje dizininde terminale sırasıyla yazılacak komutlar
 
-- yolo_env\Scripts\activate
-
 - pip install ultralytics
+
+- yolo_env\Scripts\activate
 
 - yolo detect train data="C:/Users/Seda/Desktop/yolo_hazirlik/data.yaml" model=yolov8n.pt epochs=20 imgsz=640
 
