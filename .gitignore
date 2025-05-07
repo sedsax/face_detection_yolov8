@@ -1,4 +1,4 @@
 runs
 datasets
-yolov8n.pt
+yolov8*.pt
 yolo_env
